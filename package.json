@@ -1,18 +1,29 @@
 {
-  "name": "insitent-js",
-  "version": "0.0.1",
-  "description": "Extensions to Sencha class system using initiall in PocketPAM project",
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha"
-  },
-  "keywords": [
-    "class",
-    "classes",
-    "extention",
-    "insistentjs",
-    "mixin"
-  ],
-  "author": "Oleg Taranenko",
-  "license": "MIT"
+    "name": "insistent-js",
+    "version": "0.1.1",
+    "description": "Extensions to Sencha class system using initiall in PocketPAM project",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha --reporter spec"
+    },
+    "keywords": [
+        "class",
+        "classes",
+        "extention",
+        "insistentjs",
+        "mixin"
+    ],
+    "dependencies": {
+        "sencha-touch": "*"
+    },
+    "devDependencies": {
+        "mocha": "*",
+        "should": "*"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:olegtaranenko/insistent-js.git"
+    },
+    "author": "Oleg Taranenko",
+    "license": "MIT"
 }
