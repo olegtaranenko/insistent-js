@@ -1,7 +1,5 @@
 require('sencha-touch');
 
-Ext.Loader.setPath('Insistetnt', './lib/Insistent');
+Ext.Loader.setPath('Insistent', __dirname + '/lib/Insistent');
 
-require('./lib/Insistent');
-
-module.exports = Insistent;
+// module.exports = Insistent;
