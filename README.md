@@ -2,7 +2,7 @@ Essential extensions to Sencha Touch for using it under Node.js
 
 ## Installation
 
-Installing of the package is relative tricking.
+Installing instruction will be added soon.
 
 
 ## Acknowledgments
