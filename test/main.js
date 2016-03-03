@@ -22,15 +22,16 @@ describe('Mocha ', function() {
     done();
   });
 
-  it(' iPhone is defined', function(done) {
+  it('iPhone is defined', function(done) {
     should.exist(iPhone);
     done();
   });
 
-  it(' iPhone\'s vendor name is' , function(done) {
+  it('iPhone\'s vendor name is' , function(done) {
     var vendorName = iPhone.getVendorName();
     should.equal(vendorName, 'Apple');
     done();
   });
 
 });
+

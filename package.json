@@ -14,7 +14,8 @@
         "mixin"
     ],
     "dependencies": {
-        "sencha-touch": "*"
+        "sencha-touch": "*",
+        "sqlite3": "*"
     },
     "devDependencies": {
         "mocha": "*",
