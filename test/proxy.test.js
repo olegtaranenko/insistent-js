@@ -21,7 +21,8 @@ var db;
 
 describe('sql proxy', function() {
     before(function (done) {
-        db = new sqlite3.Database('dbFileName', done);
+//         db = new sqlite3.Database(':memory:', done);
+        db = new sqlite3.Database(dbFileName, done);
     });
 
     it('test db is up', function(done) {
@@ -31,9 +32,15 @@ describe('sql proxy', function() {
 
     it('setup schema', function(done) {
         mochaBoot.bootupMochaTestingSchema(db, done);
-//         should.exist(db);
-//         done();
     });
-
+    
+    it('client budget has 5 items', function(done) {
+        db.each('select * from ClientBudget', function(err, row) {
+//             console.log('%d : %s', row.ID, row.ChildName);
+        }, function(err, num) {
+            should.equal(num, 5);
+            done();
+        });
+    })
 });
 

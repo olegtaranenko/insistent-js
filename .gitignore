@@ -1,5 +1,5 @@
 /node_modules
 .idea/workspace.xml
 .idea/vcs.xml
-/test/sqlite
+/test/cache/*.db
 *.log
