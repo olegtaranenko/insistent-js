@@ -41,6 +41,6 @@ describe('sql proxy', function() {
             should.equal(num, 5);
             done();
         });
-    })
+    });
 });
 
