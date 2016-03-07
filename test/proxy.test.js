@@ -13,11 +13,7 @@ if(dbmsConfig.verbose) {
     sqlite3.verbose();
 }
 
-var db;
-
-// var client = new sqlite3.Database(dbFileName, function(err) {
-//     mochaBoot.bootupMochaTestingSchema(client);
-// });
+var db, clientAndBudgets;
 
 describe('sql proxy', function() {
     before(function (done) {
@@ -42,5 +38,11 @@ describe('sql proxy', function() {
             done();
         });
     });
+
+    it('clientBudet store should be created', function(done) {
+        clientAndBudgets = Ext.create('Mocha.store.ClientsAndBudgetsStore');
+        should.exists(clientAndBudgets);
+        done();
+    })
 });
 
