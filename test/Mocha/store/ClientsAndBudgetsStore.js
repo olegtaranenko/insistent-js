@@ -7,10 +7,12 @@ Ext.define('Mocha.store.ClientsAndBudgetsStore',{
     requires: [
         'Mocha.model.ClientsAndBudgetsModel'
     ],
+
     config: {
         storeId: 'clientsAndBudgets',
         model: 'Mocha.model.ClientsAndBudgetsModel',
         autoDestroy: false,
+//         autoLoad: true,
         sorters: [{
             property : 'ChildName',
             direction: 'ASC'

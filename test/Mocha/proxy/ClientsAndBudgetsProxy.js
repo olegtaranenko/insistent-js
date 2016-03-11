@@ -5,7 +5,7 @@
  * Time: 23:53
  */
 Ext.define('Mocha.proxy.ClientsAndBudgetsProxy', {
-    extend: 'Insistent.proxy.NodeSqlitelProxy',
+    extend: 'Insistent.environment.GenericProxy',
     alias: 'proxy.clientsAndBudgets',
     config: {
         tableName: 'ClientBudget',

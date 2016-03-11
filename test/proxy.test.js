@@ -43,6 +43,21 @@ describe('sql proxy', function() {
         clientAndBudgets = Ext.create('Mocha.store.ClientsAndBudgetsStore');
         should.exists(clientAndBudgets);
         done();
-    })
+    });
+
+    it('... and class of ', function(done) {
+        (clientAndBudgets instanceof Mocha.store.ClientsAndBudgetsStore).should.be.true();
+        done();
+    });
+
+    /*
+        it('clientBudget store has load method', function(done) {
+            clientAndBudgets.load({
+                callback: function() {
+                    done();
+                }
+            });
+        });
+    */
 });
 

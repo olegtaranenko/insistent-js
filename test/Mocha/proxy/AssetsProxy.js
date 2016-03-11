@@ -1,3 +1,3 @@
 Ext.define('Mocha.proxy.AssetsProxy', {
-    extend: 'Insistent.proxy.NodeSqlitelProxy'
+    extend: 'Insistent.environment.node.proxy.Sqlite'
 });

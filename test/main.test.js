@@ -35,3 +35,18 @@ describe('Mocha ', function() {
 
 });
 
+describe('Environment', function() {
+  var env;
+  Ext.require('Insistent.Environment', function() {
+    it('namespace should be defined', function(done) {
+      should.exist(Insistent.Environment);
+      done();
+    });
+  });
+
+  it('is Node environment', function(done) {
+    env = Insistent.Environment.determine();
+    env.should.be.instanceof(Insistent.environment.Node);
+    done();
+  });
+});
